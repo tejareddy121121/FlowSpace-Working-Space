@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowSpace - Coworking Space</title>
+    <link rel="icon" type="image/png" href="SVG/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="index.html"> <i class="fa-solid fa-users-rectangle"></i> FlowSpace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link fs-5" href="location.html">Locations</a>
+                    <a class="nav-link fs-5" href="index.html #Memberships">Memberships</a>
+                    <a class="nav-link fs-5" href="contact.html">Contact</a>
+                </div>
+                <a href="location.html" class="btn ms-auto border rounded-pill border-dark fs-5 hover-btn" style="width: 160px;">
+                    <span class="text-front">Find your desk</span>
+                    <span class="text-back">Find your desk</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="col-md-6">
+            <p class="fw-medium display-6">Our Locations</p>
+            <p class="text-muted">From the heart of the city to calmer corners, our coworking spaces are designed to keep you productive, connected, and inspired</p>
+            <a href="#" class="btn border border-1 rounded-2 fw-light text-muted w-50 d-flex justify-content-between align-items-center text-left Search" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span>Search by city, name...</span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="input-group w-100 mx-auto">
+                    <span class="input-group-text bg-white">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input list="locations" id="placeInput" type="text" class="form-control border-start-0 p-3" placeholder="Search..." aria-label="Search">
+                    <datalist id="locations"> 
+                        <option value="Tuileries">Av. du Général Lemonnier, 75001 Paris 
+                        <option value="Commerce">Pl. de la République, 35000 Rennes 
+                        <option value="Triomphe">Pl. Charles de Gaulle, 75008 Paris 
+                        <option value="Gustave Eiffel">Av. Gustave Eiffel, 75007 Paris 
+                        <option value="Opéra">Pl. de la Mairie, 35000 Rennes 
+                        <option value="Borély">Av. du Parc Borély, 13008 Marseille
+                    </datalist>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="marseille">Marseille</button>
+            <button class="filter-btn" data-filter="paris">Paris</button>
+            <button class="filter-btn" data-filter="rennes">Rennes</button>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4 card-item" data-place="paris">
+                <div class="card border-1 rounded-4 overflow-hidden equal_card position-relative">
+                    <img src="Images/cards_img/card_img_1.webp" class="card-img absolute-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end">
+                        <div>
+                            <h5 class="fw-bold text-white mb-1">Tuileries</h5>
+                            <p class="text-white mb-2 small">6 Av. du Général Lemonnier, 75001 Paris</p>
+                        </div>
+                        <a href="tuileries.html" class="btn btn-light rounded-pill w-25 px-2 py-1 hover-btn" style="width: 50px;">
+                            <span class="text-front">View</span>
+                            <span class="text-back">View</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-item" data-place="rennes">
+                <div class="card border-1 rounded-4 overflow-hidden equal-card">
+                    <img src="Images/cards_img/card_img_02.avif" class="card-img fixed-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end">
+                        <div>
+                            <h5 class="fw-bold text-white mb-1">Commerce</h5>
+                            <p class="text-white mb-2 small">Pl. de la République, 35000 Rennes</p>
+                        </div>
+                        <a href="commerce.html" class="btn btn-light rounded-pill w-25 px-2 py-1 hover-btn" style="width: 50px;">
+                            <span class="text-front">View</span>
+                            <span class="text-back">View</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-item" data-place="paris">
+                <div class="card border-1 rounded-4 overflow-hidden equal-card">
+                    <img src="Images/cards_img/card_img_03.png" class="card-img fixed-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end">
+                        <div>
+                            <h5 class="fw-bold text-white mb-1">Triomphe</h5>
+                            <p class="text-white mb-2 small">Pl. Charles de Gaulle, 75008 Paris</p>
+                        </div>
+                        <a href="triomphe.html" class="btn btn-light rounded-pill w-25 px-2 py-1 hover-btn" style="width: 50px;">
+                            <span class="text-front">View</span>
+                            <span class="text-back">View</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-item" data-place="paris">
+                <div class="card border-1 rounded-4 overflow-hidden equal-card">
+                    <img src="Images/cards_img/card_img_4.png" class="card-img fixed-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end">
+                        <div>
+                            <h5 class="fw-bold text-white mb-1">Gustave Eiffel</h5>
+                            <p class="text-white mb-2 small">Av. Gustave Eiffel, 75007 Paris</p>
+                        </div>
+                        <a href="gustaveEiffel.html" class="btn btn-light rounded-pill w-25 px-2 py-1 hover-btn" style="width: 50px;">
+                            <span class="text-front">View</span>
+                            <span class="text-back">View</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-item" data-place="marseille">
+                <div class="card border-1 rounded-4 overflow-hidden equal-card">
+                    <img src="Images/cards_img/card_img_05.png" class="card-img fixed-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end">
+                        <div>
+                            <h5 class="fw-bold text-white mb-1">Borély</h5>
+                            <p class="text-white mb-2 small">Av. du Parc Borély, 13008 Marseille</p>
+                        </div>
+                        <a href="borely.html" class="btn btn-light rounded-pill w-25 px-2 py-1 hover-btn" style="width: 50px;">
+                            <span class="text-front">View</span>
+                            <span class="text-back">View</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 card-item" data-place="rennes">
+                <div class="card border-1 rounded-4 overflow-hidden equal-card">
+                    <img src="Images/cards_img/card_img_06.png" class="card-img fixed-img" alt="">
+                    <div class="card-img-overlay d-flex justify-content-between align-items-end">
+                        <div>
+                            <h5 class="fw-bold text-white mb-1">Opéra</h5>
+                            <p class="text-white mb-2 small">Pl. de la Mairie, 35000 Rennes</p>
+                        </div>
+                        <a href="opera.html" class="btn btn-light rounded-pill w-25 px-2 py-1 hover-btn" style="width: 50px;">
+                            <span class="text-front">View</span>
+                            <span class="text-back">View</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 bg-black text-white p-5 rounded-4 ">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <p class="fw-medium display-6">Ready to find your flow?</p>
+                <p class="text-white">Join a community of driven professionals built for focus, flexibility, and real connectioin. Your desk is waiting.</p>
+                <a href="contact.html" class="btn ms-auto border rounded-pill text-black bg-white mt-2 fs-5 mb-4 hover-btn" style="width: 160px;">
+                    <span class="text-front d-flex align-items-center ms-3">Contact us <i class="fa-regular fa-envelope bg-black text-white icon ms-3"></i></span>
+                    <span class="text-back d-flex align-items-center ms-3">Contact us <i class="fa-solid fa-square-arrow-up-right ms-3 icon fs-3"></i></span>                 
+                </a>
+            </div>
+            <div class="col-md-5 P_Left">
+                <p><i class="fa-solid fa-wifi"></i> 500 Mbps Wi-Fi</p>
+                <p><i class="fa-solid fa-clock"></i> 24/7 Access</p>
+                <p><i class="fa-solid fa-users"></i> Meeting Rooms</p>
+                <p><i class="fa-solid fa-chair"></i> Economic Chairs</p>
+                <div class="feedback_logo-group">
+                    <img src="Images/Feedback_img/Feedback_Person_img_01.webp" alt="User 1" class="feedback_logo">
+                    <img src="Images/Feedback_img/Feedback_Person_img_2.webp" alt="User 2" class="feedback_logo">
+                    <img src="Images/Feedback_img/Feedback_Person_img_3.webp" alt="User 3" class="feedback_logo">
+                    <img src="Images/Feedback_img/Feedback_Person_img_4.webp" alt="User 4" class="feedback_logo">
+                    <span class="px-3">Join 500+ professionals</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 bg-black text-white p-5">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="navbar-brand fw-bold text-white fs-5 " href="index.html"> <i class="fa-solid fa-users-rectangle"></i> FlowSpace</a>
+                <p class="text-white py-4">Coworking designed for focus, flexibility, and community.</p>
+                <p class="pt-5">Created by <img src="Images/Feedback_img/Feedback_Person_img_01.webp" alt="Auther" width="30px" height="30px" style="border-radius: 50px;"> Arthur in Framer</p>
+            </div>
+            <div class="col-md-3">
+                <p class="navbar-brand fw-bold text-white fs-5 "> Navigation</p>
+                <p><a class="navbar-brand fw-medium text-white" href="index.html">Home</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="location.html">Locations</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="index.html #Memberships">Memberships</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="index.html #FAQ">FAQ</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="privacyPolicy.html #Privacy_policy">Privacy policy</a></p>
+            </div>
+            <div class="col-md-2">
+                <p class="navbar-brand fw-bold text-white fs-5 "> Socials</p>
+                <p><a class="navbar-brand fw-medium text-white" href="https://x.com/uxui_arthur" target="_blank">Twitter (X)</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
+            </div>
+            <div class="col-md-3">
+                <p class="navbar-brand fw-bold text-white fs-5 "> Contact</p>
+                <p><a class="navbar-brand fw-medium text-white" href="mailto:hello@yourcoworking.com"><i class="fa-regular fa-envelope"></i> hello@yourcoworking.com</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="tel:+33 6 12 34 56 78"><i class="fa-solid fa-phone"></i> +33 6 12 34 56 78</a></p>
+                <p class="navbar-brand fw-medium text-white"><i class="fa-solid fa-clock"></i> Mon-Fri, 9am to 6pm</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

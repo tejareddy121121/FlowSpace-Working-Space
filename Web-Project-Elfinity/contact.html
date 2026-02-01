@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowSpace - Coworking Space</title>
+    <link rel="icon" type="image/png" href="SVG/logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="bg-black text-white">
+        <nav class="navbar navbar-expand-lg pb-5">
+            <div class="container">
+                <a class="navbar-brand fs-4 text-white" href="index.html"> <i class="fa-solid fa-users-rectangle"></i> FlowSpace</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link fs-5 text-white" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link fs-5 text-white" href="location.html">Locations</a>
+                        <a class="nav-link fs-5 text-white" href="index.html #Memberships">Memberships</a>
+                        <a class="nav-link fs-5 text-white" href="#">Contact</a>
+                    </div>
+                    <a href="location.html" class="btn ms-auto border rounded-pill text-white fs-5 hover-btn" style="width: 160px;">
+                        <span class="text-front">Find your desk</span>
+                        <span class="text-back">Find your desk</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-5 bg-black text-white py-5 mt-5 rounded-4 ">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <p class="fw-medium display-3">Let's connect</p>
+                    <p class="text-white pb-5">Got a question? Want to book a tour or just say hi? <br>We'd love to hear from you.</p>
+                    <div class="col-md-3">
+                        <p><a class="navbar-brand fw-medium text-white" href="#"><i class="fa-regular fa-envelope"></i> hello@yourcoworking.com</a></p>
+                        <p><a class="navbar-brand fw-medium text-white" href="#"><i class="fa-solid fa-phone"></i> +33 6 12 34 56 78</a></p>
+                        <p><a class="navbar-brand fw-medium text-white" href="#"><i class="fa-solid fa-clock"></i> Mon-Fri, 9am to 6pm</a></p>
+                        <p><a class="navbar-brand fw-medium text-white" href="#" ><i class="fa-brands fa-instagram"></i> @yourcoworking</a></p>
+                    </div>
+                </div>
+                <div class="col-md-7 P_Left">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control bg-secondary border-0" placeholder="Jane Smith" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control bg-secondary border-0" id="inputEmail4" placeholder="jane@framer.com" required>
+                        </div>
+                        <label for="connect" class="form-label">What can we help you with?</label>
+                        <select class="form-select bg-secondary border-0" aria-label="Default select example" required>
+                            <option selected>Select...</option>
+                            <option value="1">Book a tour</option>
+                            <option value="2">Ask a question</option>
+                            <option value="3">Partnership</option>
+                            <option value="4">Something else</option>
+                        </select>
+                        <label for="Message" class="form-label">Message</label>
+                        <div class="form-floating">
+                            <textarea class="form-control bg-secondary border-0" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+                            <label for="floatingTextarea">Your message...</label>
+                        </div>
+                        <button type="submit" class="rounded-pill border-0 py-2 hover-btn">
+                            <span class="text-front">Send your message</span>
+                            <span class="text-back">Send your message</span>
+                        </button>  
+                    </form>
+                    <div>
+                        <p class="text-white text-center py-3" style="font-size: 0.8rem;">We usually reply within a few hours. No bots — just real humans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container gap_buttom tagline2">
+        <div class="row scroll_section">
+            <div class="col-md-6 left_content">
+                <p class="fw-medium display-6">Quick answers before you reach out</p>
+                <p class="text-muted">Got something on your mind? Check below — or just send us a message, we'll take it from there.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="faq-card" data-aos-anchor-placement="top-bottom">
+                    <input type="checkbox" id="faq1">
+                    <label for="faq1">Can I visit before signing up?</label>
+                    <div class="answer">
+                        Absolutely. You can book a free tour anytime — no strings attached. We'll show you around and help you choose the best plan for your needs.
+                    </div>
+                </div>
+                <div class="faq-card" data-aos-anchor-placement="top-bottom">
+                    <input type="checkbox" id="faq2">
+                    <label for="faq2">What are you opening hours?</label>
+                    <div class="answer">
+                        Members with monthly plan get 24/7 access. Day pass holders can access the speace during staffed hours (typically 9am-6pm).
+                    </div>
+                </div>
+                <div class="faq-card" data-aos-anchor-placement="top-bottom">
+                    <input type="checkbox" id="faq3">
+                    <label for="faq3">What's the different between a hot desk and dedicated desk?</label>
+                    <div class="answer">
+                        Hot desks are shared — just pick any available spot when you arrive. A dedicated desk is yours only, every day, in a fixed spot within the open space.
+                    </div>
+                </div>
+                <div class="faq-card" data-aos-anchor-placement="top-bottom">
+                    <input type="checkbox" id="faq4">
+                    <label for="faq4">Are pets allowed?</label>
+                    <div class="answer">
+                        Yes, we're dog-friendly! Just make sure your pet is calm, clean, and coworking — compatible.
+                    </div>
+                </div>
+                <div class="faq-card" data-aos-anchor-placement="top-bottom">
+                    <input type="checkbox" id="faq5">
+                    <label for="faq5">Is the Wi-Fi really that fast?</label>
+                    <div class="answer">
+                        Yep — you get up to 500 Mbps up/down on a secure, private network. Ideal for video calls, uploads, and full-remote teams.
+                    </div>
+                </div>
+                <div class="faq-card" data-aos-anchor-placement="top-bottom">
+                    <input type="checkbox" id="faq6">
+                    <label for="faq6">Can I switch plans later on?</label>
+                    <div class="answer">
+                        Of course. You can upgrade, downgrade or pause your Membership anytime. No pressure, no hidden fees.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center container tagline2 pb-4" id="Memberships">
+        <p class="fw-medium fs-1">Still Unsure? Here's what our members say.</p>
+        <p>Real words from people who booked a tour — and never looked back.</p>
+    </div>
+    <div class="marquee-container1">
+        <div class="d-flex my-2 marquee-content1">
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>I've tried cafés, libraries, you name it. Nothing beats the calm and setup here.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_01.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Liam R.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.5</p>
+                <p><q>We started as 2 founders, now we're a team of 8 in a private office. No friction at all.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_2.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Tom</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>The people, the space, the coffee — I actually look forward to going to work.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_3.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Zoe D.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.9</p>
+                <p><q>Hot desks during the day, events at night. I get my work done and meet great people.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_4.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Nora G.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>I've tried cafés, libraries, you name it. Nothing beats the calm and setup here.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_01.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Liam R.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.5</p>
+                <p><q>We started as 2 founders, now we're a team of 8 in a private office. No friction at all.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_2.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Tom</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>The people, the space, the coffee — I actually look forward to going to work.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_3.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Zoe D.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.9</p>
+                <p><q>Hot desks during the day, events at night. I get my work done and meet great people.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_3.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Nora G.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="marquee-container">
+        <div class="d-flex my-2 marquee-content">
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.9</p>
+                <p><q>Hot desks during the day, events at night. I get my work done and meet great people.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_4.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Nora G.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>The people, the space, the coffee — I actually look forward to going to work.</q></p>
+                    <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_3.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Zoe D.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.5</p>
+                <p><q>We started as 2 founders, now we're a team of 8 in a private office. No friction at all.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_2.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Tom</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>I've tried cafés, libraries, you name it. Nothing beats the calm and setup here.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_01.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Liam R.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+                <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.9</p>
+                <p><q>Hot desks during the day, events at night. I get my work done and meet great people.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_4.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Nora G.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>The people, the space, the coffee — I actually look forward to going to work.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_3.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Zoe D.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 4.5</p>
+                <p><q>We started as 2 founders, now we're a team of 8 in a private office. No friction at all.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_2.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Tom</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-1 mx-2 w-25 rounded-4 p-3 feedback-card">
+                <p><i class="fa-solid fa-star"></i> 5</p>
+                <p><q>I've tried cafés, libraries, you name it. Nothing beats the calm and setup here.</q></p>
+                <div class="d-flex gap-4">
+                    <div>
+                        <img src="Images/Feedback_img/Feedback_Person_img_01.webp" alt="Feedback_Person_img_1" width="50px" height="55px" style="border-radius: 50px;">
+                    </div>
+                    <div>
+                        <p class="fw-bold name_R">Liam R.</p>
+                        <p class="position">Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <div class="mt-5 bg-black text-white p-5">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="navbar-brand fw-bold text-white fs-5 " href="index.html"> <i class="fa-solid fa-users-rectangle"></i> FlowSpace</a>
+                <p class="text-white py-4">Coworking designed for focus, flexibility, and community.</p>
+                <p class="pt-5">Created by <img src="Images/Feedback_img/Feedback_Person_img_01.webp" alt="Auther" width="30px" height="30px" style="border-radius: 50px;"> Arthur in Framer</p>
+            </div>
+            <div class="col-md-3">
+                <p class="navbar-brand fw-bold text-white fs-5 "> Navigation</p>
+                <p><a class="navbar-brand fw-medium text-white" href="index.html">Home</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="location.html">Locations</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="index.html #Memberships">Memberships</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="index.html #FAQ">FAQ</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="privacyPolicy.html #Privacy_policy">Privacy policy</a></p>
+            </div>
+            <div class="col-md-2">
+                <p class="navbar-brand fw-bold text-white fs-5 "> Socials</p>
+                <p><a class="navbar-brand fw-medium text-white" href="https://x.com/uxui_arthur" target="_blank">Twitter (X)</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></p>
+            </div>
+            <div class="col-md-3">
+                <p class="navbar-brand fw-bold text-white fs-5 "> Contact</p>
+                <p><a class="navbar-brand fw-medium text-white" href="mailto:hello@yourcoworking.com"><i class="fa-regular fa-envelope"></i> hello@yourcoworking.com</a></p>
+                <p><a class="navbar-brand fw-medium text-white" href="tel:+33 6 12 34 56 78"><i class="fa-solid fa-phone"></i> +33 6 12 34 56 78</a></p>
+                <p class="navbar-brand fw-medium text-white"><i class="fa-solid fa-clock"></i> Mon-Fri, 9am to 6pm</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
